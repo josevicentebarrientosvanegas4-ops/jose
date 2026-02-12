@@ -1,6 +1,6 @@
 window.addEventListener("DOMContentLoaded", () => {
 
-  const fechaInicio = new Date("2025-02-14");
+  const fechaInicio = new Date("2025-10-14");
 
   function actualizarContador(){
     const ahora = new Date();
