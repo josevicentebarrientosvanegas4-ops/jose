@@ -1,0 +1,61 @@
+body{
+  margin:0;
+  background: linear-gradient(#ff9ecb, #ff5ca8);
+  font-family: Arial, sans-serif;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.card{
+  background:#fff3e6;
+  padding:30px;
+  border-radius:12px;
+  width:700px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.texto{
+  width:50%;
+}
+
+.arbol{
+  position:relative;
+  width:250px;
+  height:260px;
+}
+
+.tronco{
+  width:18px;
+  height:120px;
+  background:#6b3e26;
+  position:absolute;
+  bottom:0;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+.copa{
+  position:absolute;
+  bottom:100px;
+  left:50%;
+  transform:translateX(-50%);
+  width:220px;
+  height:180px;
+}
+
+.corazon{
+  position:absolute;
+  color:red;
+  font-size:18px;
+  animation: flotar 6s linear infinite;
+}
+
+@keyframes flotar{
+  0%{ transform: translateY(0); opacity:1; }
+  100%{ transform: translateY(-200px); opacity:0; }
+}
